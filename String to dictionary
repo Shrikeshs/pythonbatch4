@@ -1,0 +1,13 @@
+def daisy(str):
+    f=w.split(';')
+    d={}
+    for x in range(0,len(f)):
+        d[x]=f[x].split('=')
+    e={}
+    for x in d:
+        e[d[x][0]]=d[x][1]
+        return e
+ 
+w=input("enter thr string")
+q=daisy(w)
+print(q)
