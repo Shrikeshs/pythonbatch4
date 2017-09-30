@@ -1,0 +1,8 @@
+import smtplib
+server=smtplib.SMTP('smtp.gmail.com',587)
+server.ehlo()
+server.starttls()
+server.login("username","password")
+msg="Hello"
+server.sendmail("gggg@gmail.com","ddddd@gmail.com",msg)
+
